@@ -1,32 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Portfolio</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="home.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hassaan Sabir</title>
+  <meta name="description" content="Hassaan Sabir — software engineer.">
+  <link rel="icon" href="images/avatar.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
 
-  <div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
-    <a href="about.html">About</a>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="column">
-        <img src="the.jpg">
-      </div>
-      <div class="column">
-        <h1 style="font-size: 100px;">Hassaan Sabir</h1>
-        <p style="font-size: 35px;">Software Engineer</p>
-      </div>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-name">
+        <img src="images/avatar.jpg" class="nav-avatar" alt="">
+        Hassaan Sabir
+      </a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="mailto:hassaansabir43@gmail.com">Email</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div class="footer">
-    <p style="font-size: 15px;">Phone Number: 647-676-1539 📱| Email: hassaansabir43@gmail.com ✉️</p>
-  </div>
-  
+  <main id="top">
+
+    <section class="hero">
+      <div class="container">
+        <p class="meta">
+          <span>Software Engineer</span>
+          <span class="slash">/</span>
+          <span>Mississauga, ON</span>
+          <span class="slash">/</span>
+          <span><span id="age">20</span> years old</span>
+        </p>
+        <h1 class="name">Hassaan Sabir</h1>
+        <p class="bio">Software engineering student at Western. I build cross-platform apps and the occasional Chromium fork.</p>
+        <p class="links">
+          <a href="mailto:hassaansabir43@gmail.com">hassaansabir43@gmail.com</a>
+          <span class="slash">/</span>
+          <a href="https://github.com/hassaan43" target="_blank" rel="noopener">github.com/hassaan43</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <p class="label">About</p>
+        <p class="prose">I build software that ships — full products, not demos. Lately a flashcard app spanning web, mobile, and desktop, a recipe generator that reads the inside of a fridge, and a custom Chromium fork.</p>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <p class="label">Work</p>
+
+        <div class="tabs">
+          <div class="tab-list" role="tablist">
+            <button class="tab active" data-tab="experience" role="tab">Experience</button>
+            <button class="tab" data-tab="projects" role="tab">Projects</button>
+            <button class="tab" data-tab="toolkit" role="tab">Toolkit</button>
+          </div>
+
+          <div class="tab-panels">
+
+            <div class="tab-panel active" data-panel="experience">
+              <article class="work-item">
+                <div class="work-head">
+                  <h3 class="work-title">Software Engineering Intern</h3>
+                  <span class="work-period">Jan 2026 — Apr 2026</span>
+                </div>
+                <p class="work-org">Kognitive Sales Solutions <span class="slash">·</span> London, ON</p>
+                <p class="work-desc">Built <strong>kogbucks.store</strong>, an internal auction platform where sales reps spend virtual currency they earned through sales performance to bid on company-funded rewards. Owned the bidding flow, virtual currency ledger, and admin tooling for prize curation end-to-end — from initial design through production deployment, iterating on stakeholder feedback.</p>
+                <p class="work-tech">TypeScript<span class="slash">/</span>Angular<span class="slash">/</span>PostgreSQL<span class="slash">/</span>Jira<span class="slash">/</span>Confluence</p>
+              </article>
+
+              <article class="work-item">
+                <div class="work-head">
+                  <h3 class="work-title">Engineering Project Team Member</h3>
+                  <span class="work-period">Jan 2024 — Apr 2024</span>
+                </div>
+                <p class="work-org">Youth Opportunities Unlimited <span class="slash">·</span> London, ON</p>
+                <p class="work-desc">Designed a <strong>rooftop irrigation system</strong> in SolidWorks for a London-based non-profit, translating client interviews and constraints into a buildable spec. Produced detailed CAD models to validate the design with non-technical stakeholders, and coordinated multi-person team delivery to hand the project off on time.</p>
+                <p class="work-tech">SolidWorks<span class="slash">/</span>CAD</p>
+              </article>
+            </div>
+
+            <div class="tab-panel" data-panel="projects">
+
+              <article class="work-item project-item" data-brand="deckira">
+                <div class="project-text">
+                  <div class="work-head">
+                    <h3 class="work-title">Deckira</h3>
+                    <span class="work-period">Ongoing</span>
+                  </div>
+                  <p class="work-org">
+                    <a class="work-ext" href="https://deckira.com" target="_blank" rel="noopener">deckira.com ↗</a>
+                    <span class="slash">·</span> with a partner
+                  </p>
+                  <p class="work-desc">Flashcards spanning <strong>web, mobile, and desktop</strong> on a shared Supabase backend. <strong>FSRS</strong> scheduling prioritizes cards by recall probability, an AI pipeline turns notes or images into cards, and Stripe powers a Pro tier with feature gating and entitlement cleanup.</p>
+                  <p class="work-tech">React<span class="slash">/</span>React Native<span class="slash">/</span>Tauri<span class="slash">/</span>Rust<span class="slash">/</span>TypeScript<span class="slash">/</span>Supabase<span class="slash">/</span>Stripe</p>
+                </div>
+                <div class="project-media demo-deckira" id="deckiraDemo">
+                  <div class="demo-window">
+                    <div class="demo-bar">
+                      <div class="demo-dots">
+                        <span></span><span></span><span></span>
+                      </div>
+                      <span class="demo-mode-label">FSRS Review</span>
+                      <span class="demo-count" id="demoCount">1 / 3</span>
+                    </div>
+                    <div class="demo-card" id="demoCard" tabindex="0" role="button" aria-label="Reveal answer">
+                      <p class="demo-label" id="demoLabel">FRONT</p>
+                      <p class="demo-text" id="demoText">What does FSRS stand for?</p>
+                      <div class="demo-divider"></div>
+                      <p class="demo-hint" id="demoHint">Tap to reveal answer</p>
+                    </div>
+                    <div class="demo-actions" id="demoActions" hidden>
+                      <button type="button" class="demo-rate" data-rate="again">Again</button>
+                      <button type="button" class="demo-rate" data-rate="hard">Hard</button>
+                      <button type="button" class="demo-rate" data-rate="good">Good</button>
+                      <button type="button" class="demo-rate" data-rate="easy">Easy</button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="work-item project-item" data-brand="culinara">
+                <div class="project-text">
+                  <div class="work-head">
+                    <h3 class="work-title">Culinara</h3>
+                    <span class="work-period">Ongoing</span>
+                  </div>
+                  <p class="work-org">iOS / Android app <span class="slash">·</span> with a partner</p>
+                  <p class="work-desc">Generates personalized recipes from what's already in your fridge — scan ingredients with the camera, rank meals by what's about to expire, and respect your dietary preferences. <strong>Apple HealthKit</strong> and <strong>Android Health Connect</strong> surface nutrition history alongside generated meals.</p>
+                  <p class="work-tech">React Native<span class="slash">/</span>Expo<span class="slash">/</span>TypeScript<span class="slash">/</span>Supabase<span class="slash">/</span>Gemini<span class="slash">/</span>Stripe</p>
+                </div>
+                <div class="project-media">
+                  <img src="images/culinara-pantry.jpg" alt="Culinara — pantry view on iOS" loading="lazy">
+                </div>
+              </article>
+
+              <article class="work-item project-item" data-brand="melo">
+                <div class="project-text">
+                  <div class="work-head">
+                    <h3 class="work-title">Melo</h3>
+                    <span class="work-period">2026</span>
+                  </div>
+                  <p class="work-org">Custom Chromium fork <span class="slash">·</span> solo</p>
+                  <p class="work-desc">A Chromium fork with custom theming, a right-edge pinnable sidebar, and a <code>melo://</code> URL scheme — named and branded around <strong>my actual cat</strong> (yes, that's him on the right). A <strong>JSON-patch system</strong> applies file overlays and idempotent string substitutions across the source tree, so rebuilds against pinned upstream versions don't fight merge conflicts. Builds run on an Oracle Cloud VM and ship as Windows installers.</p>
+                  <p class="work-tech">Chromium<span class="slash">/</span>C++<span class="slash">/</span>Python<span class="slash">/</span>GN<span class="slash">/</span>Bash<span class="slash">/</span>Oracle Cloud</p>
+                </div>
+                <div class="project-media">
+                  <img src="images/melo-cat.png" alt="Melo — the cat the project is named after" loading="lazy">
+                </div>
+              </article>
+
+              <article class="work-item project-item" data-brand="plop">
+                <div class="project-text">
+                  <div class="work-head">
+                    <h3 class="work-title">Plop</h3>
+                    <span class="work-period">2024</span>
+                  </div>
+                  <p class="work-org">
+                    <a class="work-ext" href="https://plop.hsabir.com" target="_blank" rel="noopener">plop.hsabir.com ↗</a>
+                    <span class="slash">·</span> solo
+                  </p>
+                  <p class="work-desc">A <strong>personal bowel-movement predictor</strong> — log meals and movements, and Plop learns your transit time to estimate when the next one's coming. Includes a Bristol Stool Scale logger, a calendar view, and personal pattern insights, all stored locally in the browser. The food-logging half of it eventually planted the seed for <span class="color-culinara">Culinara</span>.</p>
+                  <p class="work-tech">HTML<span class="slash">/</span>CSS<span class="slash">/</span>JavaScript<span class="slash">/</span>LocalStorage</p>
+                </div>
+                <div class="project-media demo-plop" aria-hidden="true">
+                  <div class="plop-emoji">💩</div>
+                  <div class="plop-wordmark">plop</div>
+                </div>
+              </article>
+
+            </div>
+
+            <div class="tab-panel" data-panel="toolkit">
+              <dl class="toolkit">
+                <dt>Languages</dt>
+                <dd>TypeScript, JavaScript, Python, Java, C++, SQL, HTML, CSS <span class="muted">— C, C#, Rust (familiar)</span></dd>
+                <dt>Frameworks</dt>
+                <dd>React, React Native, Expo, Tauri, Node.js, Vite</dd>
+                <dt>Backend</dt>
+                <dd>Supabase, PostgreSQL, SQLite, Stripe, REST APIs</dd>
+                <dt>Cloud</dt>
+                <dd>AWS, GCP, Oracle Cloud, Vercel</dd>
+                <dt>Tools</dt>
+                <dd>Git, GitHub, Jira, Confluence, Unity, SolidWorks</dd>
+                <dt>AI tooling</dt>
+                <dd>Claude Code, GitHub Copilot, Cursor</dd>
+              </dl>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Hassaan Sabir</p>
+      <p>
+        <a href="mailto:hassaansabir43@gmail.com">Email</a>
+        <span class="slash">/</span>
+        <a href="https://github.com/hassaan43" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
