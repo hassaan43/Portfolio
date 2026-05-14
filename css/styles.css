@@ -148,11 +148,16 @@ code {
 
 .prose {
   margin: 0;
-  font-size: 19px;
   max-width: 620px;
-  line-height: 1.55;
   color: var(--text);
 }
+.prose p {
+  margin: 0 0 18px;
+  font-size: 19px;
+  line-height: 1.55;
+}
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { color: var(--accent); font-weight: 500; }
 
 /* ============ TABS ============ */
 .tab-list {
