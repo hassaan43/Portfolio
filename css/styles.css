@@ -278,14 +278,30 @@ code {
   display: block;
 }
 .project-item[data-brand="culinara"] {
-  grid-template-columns: 1fr 240px;
+  grid-template-columns: 1fr 200px;
+  align-items: center;
 }
 .project-item[data-brand="culinara"] .project-media {
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 6 / 13;
+  background: #0e1117;
+  border: 1px solid #1f2128;
+  border-radius: 26px;
+  padding: 7px;
+  box-shadow:
+    0 24px 56px -16px rgba(255, 107, 53, 0.28),
+    0 6px 14px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+.project-item[data-brand="culinara"]:hover .project-media {
+  transform: translateY(-3px);
+  border-color: #2a2c34;
 }
 .project-item[data-brand="culinara"] .project-media img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: top center;
+  border-radius: 18px;
+  display: block;
 }
 .project-item[data-brand="melo"] .project-media {
   aspect-ratio: 1 / 1;
